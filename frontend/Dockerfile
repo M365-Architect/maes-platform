@@ -40,4 +40,6 @@ EXPOSE 80 443
 
 # Use custom entrypoint
 ENTRYPOINT ["/docker-entrypoint.sh"]
+#ENTRYPOINT "/docker-entrypoint.sh"
+
 CMD ["nginx", "-g", "daemon off;"]
